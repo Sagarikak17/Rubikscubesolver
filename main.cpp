@@ -1,6 +1,7 @@
-#include <iostream>
+#include <RubiksCube3dArray.cpp>
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    RUbiksCube3dArray
     return 0;
 }

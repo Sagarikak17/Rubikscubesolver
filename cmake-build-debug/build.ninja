@@ -55,8 +55,14 @@ build CMakeFiles/Rubikscubesolver.dir/main.cpp.obj: CXX_COMPILER__Rubikscubesolv
   OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
   OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
 
-build CMakeFiles/Rubikscubesolver.dir/rubikscube.cpp.obj: CXX_COMPILER__Rubikscubesolver_unscanned_Debug C$:/Users/sagar/CLionProjects/Rubikscubesolver/rubikscube.cpp || cmake_object_order_depends_target_Rubikscubesolver
-  DEP_FILE = CMakeFiles\Rubikscubesolver.dir\rubikscube.cpp.obj.d
+build CMakeFiles/Rubikscubesolver.dir/RubiksCube.cpp.obj: CXX_COMPILER__Rubikscubesolver_unscanned_Debug C$:/Users/sagar/CLionProjects/Rubikscubesolver/RubiksCube.cpp || cmake_object_order_depends_target_Rubikscubesolver
+  DEP_FILE = CMakeFiles\Rubikscubesolver.dir\RubiksCube.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
+
+build CMakeFiles/Rubikscubesolver.dir/Rubikscube3darray.cpp.obj: CXX_COMPILER__Rubikscubesolver_unscanned_Debug C$:/Users/sagar/CLionProjects/Rubikscubesolver/Rubikscube3darray.cpp || cmake_object_order_depends_target_Rubikscubesolver
+  DEP_FILE = CMakeFiles\Rubikscubesolver.dir\Rubikscube3darray.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
   OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
@@ -69,7 +75,7 @@ build CMakeFiles/Rubikscubesolver.dir/rubikscube.cpp.obj: CXX_COMPILER__Rubikscu
 #############################################
 # Link the executable Rubikscubesolver.exe
 
-build Rubikscubesolver.exe: CXX_EXECUTABLE_LINKER__Rubikscubesolver_Debug CMakeFiles/Rubikscubesolver.dir/main.cpp.obj CMakeFiles/Rubikscubesolver.dir/rubikscube.cpp.obj
+build Rubikscubesolver.exe: CXX_EXECUTABLE_LINKER__Rubikscubesolver_Debug CMakeFiles/Rubikscubesolver.dir/main.cpp.obj CMakeFiles/Rubikscubesolver.dir/RubiksCube.cpp.obj CMakeFiles/Rubikscubesolver.dir/Rubikscube3darray.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
