@@ -2,14 +2,16 @@
 // Created by sagar on 30-06-2024.
 //
 
-#ifndef RUBIKSCUBE_H
-#define RUBIKSCUBE_H
-#include <bits/stdc++.h>
+#ifndef RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H
+#define RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H
+
+#include "bits/stdc++.h"
 
 using namespace std;
 
 
-class Rubikscube {public:
+class RubiksCube {
+public:
     enum class FACE {
         UP,
         LEFT,
@@ -36,14 +38,33 @@ class Rubikscube {public:
         F, FPRIME, F2,
         B, BPRIME, B2
     };
+
+
     virtual COLOR getColor(FACE face, unsigned row, unsigned col) const = 0;
+
+
     static char getColorLetter(COLOR color);
+
+
     virtual bool isSolved() const = 0;
+
+
     static string getMove(MOVE ind);
+
+
     void print() const;
+
+
     vector<MOVE> randomShuffleCube(unsigned int times);
+
+
     RubiksCube &move(MOVE ind);
+
+
     RubiksCube &invert(MOVE ind);
+
+
+
     virtual RubiksCube &f() = 0;
 
     virtual RubiksCube &fPrime() = 0;
@@ -85,10 +106,7 @@ class Rubikscube {public:
     uint8_t getCornerIndex(uint8_t ind) const;
 
     uint8_t getCornerOrientation(uint8_t ind) const;
-
-
 };
 
 
-
-#endif //RUBIKSCUBE_H
+#endif //RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H

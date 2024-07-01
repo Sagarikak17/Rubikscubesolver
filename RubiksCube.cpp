@@ -139,7 +139,7 @@ RubiksCube &RubiksCube::invert(MOVE ind) {
             return this->b2();
     }
 }
-oid RubiksCube::print() const {
+void RubiksCube::print() const {
     cout << "Rubik's Cube:\n\n";
 
     for (int row = 0; row <= 2; row++) {
