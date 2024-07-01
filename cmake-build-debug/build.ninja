@@ -73,6 +73,36 @@ build CMakeFiles/Rubikscubesolver.dir/RubiksCube1dArray.cpp.obj: CXX_COMPILER__R
   OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
   OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
 
+build CMakeFiles/Rubikscubesolver.dir/CornerDBMaker.cpp.obj: CXX_COMPILER__Rubikscubesolver_unscanned_Debug C$:/Users/sagar/CLionProjects/Rubikscubesolver/CornerDBMaker.cpp || cmake_object_order_depends_target_Rubikscubesolver
+  DEP_FILE = CMakeFiles\Rubikscubesolver.dir\CornerDBMaker.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
+
+build CMakeFiles/Rubikscubesolver.dir/CornerPatternDatabase.cpp.obj: CXX_COMPILER__Rubikscubesolver_unscanned_Debug C$:/Users/sagar/CLionProjects/Rubikscubesolver/CornerPatternDatabase.cpp || cmake_object_order_depends_target_Rubikscubesolver
+  DEP_FILE = CMakeFiles\Rubikscubesolver.dir\CornerPatternDatabase.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
+
+build CMakeFiles/Rubikscubesolver.dir/NibbleArray.cpp.obj: CXX_COMPILER__Rubikscubesolver_unscanned_Debug C$:/Users/sagar/CLionProjects/Rubikscubesolver/NibbleArray.cpp || cmake_object_order_depends_target_Rubikscubesolver
+  DEP_FILE = CMakeFiles\Rubikscubesolver.dir\NibbleArray.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
+
+build CMakeFiles/Rubikscubesolver.dir/PatternDatabase.cpp.obj: CXX_COMPILER__Rubikscubesolver_unscanned_Debug C$:/Users/sagar/CLionProjects/Rubikscubesolver/PatternDatabase.cpp || cmake_object_order_depends_target_Rubikscubesolver
+  DEP_FILE = CMakeFiles\Rubikscubesolver.dir\PatternDatabase.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
+
+build CMakeFiles/Rubikscubesolver.dir/Math.cpp.obj: CXX_COMPILER__Rubikscubesolver_unscanned_Debug C$:/Users/sagar/CLionProjects/Rubikscubesolver/Math.cpp || cmake_object_order_depends_target_Rubikscubesolver
+  DEP_FILE = CMakeFiles\Rubikscubesolver.dir\Math.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
+  OBJECT_FILE_DIR = CMakeFiles\Rubikscubesolver.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Rubikscubesolver
@@ -81,7 +111,7 @@ build CMakeFiles/Rubikscubesolver.dir/RubiksCube1dArray.cpp.obj: CXX_COMPILER__R
 #############################################
 # Link the executable Rubikscubesolver.exe
 
-build Rubikscubesolver.exe: CXX_EXECUTABLE_LINKER__Rubikscubesolver_Debug CMakeFiles/Rubikscubesolver.dir/main.cpp.obj CMakeFiles/Rubikscubesolver.dir/RubiksCube.cpp.obj CMakeFiles/Rubikscubesolver.dir/RubiksCube3dArray.cpp.obj CMakeFiles/Rubikscubesolver.dir/RubiksCube1dArray.cpp.obj
+build Rubikscubesolver.exe: CXX_EXECUTABLE_LINKER__Rubikscubesolver_Debug CMakeFiles/Rubikscubesolver.dir/main.cpp.obj CMakeFiles/Rubikscubesolver.dir/RubiksCube.cpp.obj CMakeFiles/Rubikscubesolver.dir/RubiksCube3dArray.cpp.obj CMakeFiles/Rubikscubesolver.dir/RubiksCube1dArray.cpp.obj CMakeFiles/Rubikscubesolver.dir/CornerDBMaker.cpp.obj CMakeFiles/Rubikscubesolver.dir/CornerPatternDatabase.cpp.obj CMakeFiles/Rubikscubesolver.dir/NibbleArray.cpp.obj CMakeFiles/Rubikscubesolver.dir/PatternDatabase.cpp.obj CMakeFiles/Rubikscubesolver.dir/Math.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Rubikscubesolver.dir
