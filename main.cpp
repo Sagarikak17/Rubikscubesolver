@@ -1,11 +1,12 @@
 #include "RubiksCube3dArray.cpp"
 #include "RubiksCube1dArray.cpp"
 #include "DFSSolver.h"
+#include "BFSSolver.h"
 using namespace std;
 
 int main() {
-    RubiksCube3dArray object3DArray;
-    object3DArray.print();
+    //RubiksCube3dArray object3DArray;
+    //object3DArray.print();
 
     /*object3DArray.l();
     object3DArray.print();
@@ -13,7 +14,7 @@ int main() {
     //RubiksCube1dArray object1DArray;
     //object1DArray.print();*/
 
-    vector <RubiksCube::MOVE> movesToShuffle = object3DArray.randomShuffleCube(6);
+  /*  vector <RubiksCube::MOVE> movesToShuffle = object3DArray.randomShuffleCube(6);
     object3DArray.print();
     for (auto move : movesToShuffle) {
         cout<<object3DArray.getMove(move)<<" ";
@@ -25,7 +26,26 @@ int main() {
     for (auto move : movesToSolve) {
         cout<<object3DArray.getMove(move)<<" ";
         cout<<"\n";
-    }
+    }*/
+
+    RubiksCube3dArray cube; // Instantiate a Rubik's Cube with 3D array representation
+    cube.print();
+
+    vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(6);
+    for(auto move: shuffle_moves)
+        cout << cube.getMove(move) << " ";
+    cout << "\n";
+    cube.print();
+
+    // Create a BFS solver object with RubiksCube3DArray and an appropriate hash function
+    BFSSolver<RubiksCube3dArray, Hash3d> bfsSolver(cube);
+    vector<RubiksCube::MOVE> solve_moves = bfsSolver.solve();
+
+    for(auto move: solve_moves)
+        cout << cube.getMove(move) << " ";
+    cout << "\n";
+    bfsSolver.rubiksCube.print();
+
 
 
 
