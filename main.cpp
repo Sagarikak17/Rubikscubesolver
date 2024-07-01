@@ -2,10 +2,13 @@
 #include "RubiksCube1dArray.cpp"
 #include "DFSSolver.h"
 #include "BFSSolver.h"
+#include "IDDFSSolver.h"
+#include "IDAstarSolver.h"
+#include "RubiksCubeBitboard.cpp"
 using namespace std;
 
 int main() {
-    //RubiksCube3dArray object3DArray;
+    RubiksCube3dArray object3DArray;
     //object3DArray.print();
 
     /*object3DArray.l();
@@ -20,6 +23,10 @@ int main() {
         cout<<object3DArray.getMove(move)<<" ";
         cout<<"\n";
     }
+
+    DDDDFFFFSSSSS SOLVER 3DARRAY
+
+
     DFSSolver<RubiksCube3dArray,Hash3d> dfsSolver(object3DArray,7) ;
     vector <RubiksCube::MOVE> movesToSolve = dfsSolver.solve();
     dfsSolver.rubiksCube.print();
@@ -28,7 +35,10 @@ int main() {
         cout<<"\n";
     }*/
 
-    RubiksCube3dArray cube; // Instantiate a Rubik's Cube with 3D array representation
+    //BBBBFFFSSSS SOLVER 3DARRAY
+
+
+    /*RubiksCube3dArray cube; // Instantiate a Rubik's Cube with 3D array representation
     cube.print();
 
     vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(6);
@@ -37,17 +47,51 @@ int main() {
     cout << "\n";
     cube.print();
 
-    // Create a BFS solver object with RubiksCube3DArray and an appropriate hash function
     BFSSolver<RubiksCube3dArray, Hash3d> bfsSolver(cube);
     vector<RubiksCube::MOVE> solve_moves = bfsSolver.solve();
 
     for(auto move: solve_moves)
         cout << cube.getMove(move) << " ";
     cout << "\n";
-    bfsSolver.rubiksCube.print();
+    bfsSolver.rubiksCube.print();*/
+
+
+    //IDDFSSOLVER 3D ARRAY
 
 
 
+    /*object3DArray.print();
+    vector<RubiksCube::MOVE> shuffle_moves_3d = object3DArray.randomShuffleCube(7);
+    for (auto move : shuffle_moves_3d) {
+        cout << object3DArray.getMove(move) << " ";
+    }
+    cout << "\n";
+    object3DArray.print();
+    IDDFSSolver<RubiksCube3dArray, Hash3d> iddfsSolver3d(object3DArray, 7);
+    vector<RubiksCube::MOVE> solve_moves_3d = iddfsSolver3d.solve();
+    for (auto move : solve_moves_3d) {
+        cout << object3DArray.getMove(move) << " ";
+    }
+    cout << "\n";
+    iddfsSolver3d.rubiksCube.print();*/
+
+    ///IDA STAR 3DARRAY
+
+    /*vector<RubiksCube3dArray::MOVE> shuffle_moves = object3DArray.randomShuffleCube(5);
+    for (auto move : shuffle_moves) {
+        cout << object3DArray.getMove(move) << " ";
+    }
+    cout << "\n";
+    object3DArray.print();
+
+    IDAstarSolver<RubiksCube3dArray, Hash3d> IDAstarSolver(object3DArray);  // Adjust Hash3d as per your implementation
+    vector<RubiksCube3dArray::MOVE> solve_moves = IDAstarSolver.solve();
+    for (auto move : solve_moves) {
+        cout << object3DArray.getMove(move) << " ";
+    }
+    cout << "\n";
+    // Print cube after solving
+    object3DArray.print();*/
 
 
 
@@ -65,6 +109,25 @@ int main() {
 
     object3DArray.l();
     object3DArray.print();*/
+
+
+    string fileName = "C:\\Database\\cornerDepth5V1.txt";
+
+
+
+    RubiksCubeBitboard cube;
+    auto shuffleMoves = cube.randomShuffleCube(10);
+    cube.print();
+    for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
+    cout << "\n";
+
+    IDAstarSolver<RubiksCubeBitboard, HashBitboard> idaStarSolver(cube, "C:\\Database\\cornerDepth5V1.txt");
+    auto moves = idaStarSolver.solve();
+
+    idaStarSolver.rubiksCube.print();
+    for (auto move: moves) cout << cube.getMove(move) << " ";
+    cout << "\n";
+
 
     return 0;
 }

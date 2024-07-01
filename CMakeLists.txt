@@ -23,4 +23,5 @@ add_executable(Rubikscubesolver main.cpp
         PermutationIndexer.h
         math.cpp
         math.h
+        RubiksCubeBitboard.cpp
 )

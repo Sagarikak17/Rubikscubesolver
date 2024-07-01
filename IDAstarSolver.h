@@ -3,9 +3,9 @@
 //
 
 #include<bits/stdc++.h>
-#include "../Model/RubiksCube.h"
-//#include "../Model/PatternDatabase/PatternDatabase.h"
-#include "../PatternDatabases/CornerPatternDatabase.h"
+#include "RubiksCube.h"
+//#include "PatternDatabase.h"
+#include "CornerPatternDatabase.h"
 
 #ifndef RUBIKS_CUBE_SOLVER_IDASTARSOLVER_H
 #define RUBIKS_CUBE_SOLVER_IDASTARSOLVER_H
