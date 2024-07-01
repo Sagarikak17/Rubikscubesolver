@@ -29,6 +29,8 @@ int main() {
 
 
 
+
+
    /* if (object3DArray.isSolved()) {
         cout<<"is solved"<<"\n";
     }
